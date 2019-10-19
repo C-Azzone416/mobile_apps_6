@@ -6,7 +6,11 @@
     android:orientation="horizontal"
     android:paddingTop="@dimen/spacing_middle"
     android:paddingBottom="@dimen/spacing_middle"
-    android:layout_marginBottom="@dimen/margin_lmedium">
+    android:layout_marginBottom="@dimen/margin_lmedium"
+    android:paddingStart="@dimen/margin_lmedium"
+    android:paddingEnd="@dimen/margin_small"
+    android:id="@+id/lyt_parent"
+    >
 
 
     <ImageView
@@ -26,7 +30,7 @@
         >
 
         <TextView
-            android:id="@+id/Device_name"
+            android:id="@+id/device_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"

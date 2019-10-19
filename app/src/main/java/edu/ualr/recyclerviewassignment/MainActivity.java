@@ -1,9 +1,22 @@
 package edu.ualr.recyclerviewassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+
 import android.os.Bundle;
+import java.util.List;
+
+import edu.ualr.recyclerviewassignment.data.DataGenerator;
+import edu.ualr.recyclerviewassignment.model.Device;
+
+
 
 public class MainActivity extends AppCompatActivity {
+    private RecyclerView recyclerView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initRecyclerView(){
-        // TODO. Create and initialize the RecyclerView instance here
+        int size = 5;
+        List<Device> items = DataGenerator.getDevicesDataset(size);
+        items.addAll(DataGenerator.getDevicesDataset(size));
+        items.addAll(DataGenerator.getDevicesDataset(size));
     }
+
 }

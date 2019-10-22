@@ -71,7 +71,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter{
         if (holder instanceof DeviceViewHolder) {
            DeviceViewHolder viewHolder = (DeviceViewHolder) holder;
             Device device = (Device) item;
-            viewHolder.deviceName.setText(device.getName());
+            viewHolder.setDeviceAttributes(device);
 
         } else {
             // Instance of SectionHeaderViewHolder

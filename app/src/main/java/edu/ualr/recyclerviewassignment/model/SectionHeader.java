@@ -5,7 +5,7 @@ public class SectionHeader extends Item {
 
     public SectionHeader(String label) {
         this.label = label;
-        this.section = true;
+        this.section= true;
     }
 
     public SectionHeader() {

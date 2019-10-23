@@ -35,13 +35,14 @@ public class MainActivity extends AppCompatActivity {
         List<Item> items = new LinkedList<>();
         items.addAll(DataGenerator.getDevicesDataset(size));
 
-       /* SectionHeader connectedSection = new SectionHeader(getString(R.string.connected));
+        /*SectionHeader connectedSection = new SectionHeader(getString(R.string.connected));
         SectionHeader readySection = new SectionHeader(getString(R.string.paired));
         SectionHeader linkedSection = new SectionHeader(getString(R.string.linked));
 
+
         items.add(connectedSection);
         items.add(readySection);
-        items.add(linkedSection);*/
+        items.add(linkedSection);*/   //commented out because sections crash
 
         recyclerView = findViewById(R.id.recyclerView);
         mAdapter = new RecyclerViewAdapter(this, items);
@@ -50,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(mAdapter);
     }
-
 
 
 }

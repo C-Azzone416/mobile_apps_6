@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import edu.ualr.recyclerviewassignment.R;
+import edu.ualr.recyclerviewassignment.model.Item;
 
 public class SectionHeaderViewHolder extends RecyclerView.ViewHolder {
 
@@ -16,4 +17,5 @@ public class SectionHeaderViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
         this.label = itemView.findViewById(R.id.title_section);
     }
+    
 }

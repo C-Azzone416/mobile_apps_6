@@ -27,9 +27,7 @@ public class DeviceViewHolder extends RecyclerView.ViewHolder {
         lyt_parent = v.findViewById(R.id.lyt_parent);
         connection_button = v.findViewById(R.id.connection_button);
         status_text = v.findViewById(R.id.status_text);
-
     }
-
 
     public void setDeviceAttributes(Device device){
 
